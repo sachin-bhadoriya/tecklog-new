@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+  --primary-font: 'Inter', sans-serif;
+  --secondary-font: 'Libertinus Serif', serif;
+  --color-text: #040306;
+  --color-background: #fff;
+  --color-primary: #2563eb;
+  --color-secondary: #14161f;
+  --color-tertiary: #2c313a;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #040306;
+}
+
+html{font-size: 16px; box-sizing: border-box;}
+body{font-family: var(--primary-font); color: var(--color-text); background-color: var(--color-light); margin: 0; padding: 0;}
+
+.fontprimary{font-family: var(--primary-font);}
+.fontsecondary{font-family: var(--secondary-font);}
+
+.bgprimary{background-color: var(--color-primary);}
+.bgsecondary{background-color: var(--color-secondary);}
+.bgtertiary{background-color: var(--color-tertiary);}
+
+.colorprimary{color: var(--color-primary);}
+.colorsecondary{color: var(--color-secondary);}
+.colortertiary{color: var(--color-tertiary);}
+
+.font13{font-size: 0.8125rem;}
+.font14{font-size: 0.875rem;}
+.font15{font-size: 0.9375rem;}
+.font16{font-size: 1rem;}
+.font17{font-size: 1.0625rem;}
+.font18{font-size: 1.125rem;}
+.font19{font-size: 1.1875rem;}
+.font20{font-size: 1.25rem;}
+.font22{font-size: 1.375rem;}
+.font24{font-size: 1.5rem;}
+.font26{font-size: 1.625rem;}
+.font28{font-size: 1.75rem;}
+.font30{font-size: 1.875rem;}
+.font32{font-size: 2rem;}
+.font50{font-size: 3.125rem;}
+.font52{font-size: 3.25rem;}
+
+
+.fw300{font-weight: 300;}
+.fw400{font-weight: 400;}
+.fw500{font-weight: 500;}
+.fw600{font-weight: 600;}
+.fw700{font-weight: 700;}
+.fw800{font-weight: 800;}
+.fw900{font-weight: 900;}
+
+.common-padding{padding: 1rem 2rem;}
+.common-padding-small{padding: 1rem;}
+
+@media screen and (max-width:767px) {
+  html{font-size: 12px;}
+  .common-padding{padding: 2rem 1rem;} .common-padding-small{padding: 1rem;}
+  .testimonial-section .swiper-slide-active{width: 100% !important;}
+  .testimonial-section .swiper-slide{width: 100% !important;}
+ }
+
+.container{max-width: 1280px; margin: 0 auto;}
+
+.boxshadow{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
+
+.round60 { border-radius: 60px; }
+.round40 { border-radius: 40px; }
+.round20 { border-radius: 20px; }
+.round10 { border-radius: 10px; }
+
+.sticky20{ position: sticky; top: 20px; }
