@@ -105,7 +105,17 @@ const Home = () => {
   return (
     <section>
       <div className="common-padding-small">
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785992492/Gemini_Generated_Image_b9hixab9hixab9hi_gedh2p.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image' />
+        <div className='hero-section-big-image'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785992492/Gemini_Generated_Image_b9hixab9hixab9hi_gedh2p.png" alt="Tecklog - Hero Section Image" />
+          <div className="hero-section-content">
+            <h1 className="font50 text-white fw700">
+              and future-ready digital solutions.
+            </h1>
+            <p className='font14 fw300 '>
+              At Techlog, we build more than software—we create digital experiences that solve real business challenges. Our team combines strategy, design, engineering, and AI to develop scalable products that help businesses grow faster, operate smarter, and stay ahead of the competition.
+            </p>
+          </div>
+        </div>
 
         {/* Marquee Section */}
         <div className="relative overflow-hidden py-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
@@ -160,18 +170,40 @@ const Home = () => {
 
       {/* Project Section */}
       <div className="common-padding-small">
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994446/Gemini_Generated_Image_b3o437b3o437b3o4_yncp4s.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994451/Gemini_Generated_Image_bdnvsubdnvsubdnv_cbth2m.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994452/Gemini_Generated_Image_i8ofnji8ofnji8of_maksug.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_3pddp33pddp33pdd_i9x4ci.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994461/Gemini_Generated_Image_oqlllnoqlllnoqll_2_l9aqag.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994471/Gemini_Generated_Image_ihewk5ihewk5ihew_isjxde.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994484/Gemini_Generated_Image_n29fp0n29fp0n29f_k5hisz.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994480/Gemini_Generated_Image_nay5d3nay5d3nay5_it5bzz.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994479/Gemini_Generated_Image_oqlllnoqlllnoqll_kg9srl.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994446/Gemini_Generated_Image_b3o437b3o437b3o4_yncp4s.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994451/Gemini_Generated_Image_bdnvsubdnvsubdnv_cbth2m.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994452/Gemini_Generated_Image_i8ofnji8ofnji8of_maksug.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_3pddp33pddp33pdd_i9x4ci.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994461/Gemini_Generated_Image_oqlllnoqlllnoqll_2_l9aqag.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994471/Gemini_Generated_Image_ihewk5ihewk5ihew_isjxde.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994484/Gemini_Generated_Image_n29fp0n29fp0n29f_k5hisz.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994480/Gemini_Generated_Image_nay5d3nay5d3nay5_it5bzz.png" alt="Tecklog - Hero Section Image" />
+        </div>
+        <div className='project-section-image mt-4 sticky top-4'>
+          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994479/Gemini_Generated_Image_oqlllnoqlllnoqll_kg9srl.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        </div>
       </div>
-
       {/* Service Section */}
       <div className="home-about-section">
         <div className="container">
