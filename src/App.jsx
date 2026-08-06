@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
+import NotFound from './components/NotFound'
 
 const App = () => {
   return (
@@ -14,8 +15,7 @@ const App = () => {
       <Link className='fixed bottom-50 -right-13 fixed-cta-btn px-4 pt-3 pb-6 text-white z-50'>Call To Action</Link>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

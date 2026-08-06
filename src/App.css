@@ -27,6 +27,7 @@ nav ul.main-nav-bar-list li a:hover{color: var(--color-primary);}
 
 /* hero section styles */
 .hero-section-big-image{width: 100%; max-height: calc(100dvh - 2rem); min-height: calc(70dvh - 2rem); height: 100%; object-fit: cover; border-radius: 1rem;}
+.not-found-image{width: 100%; height: calc(100dvh - 2rem - 51px); object-fit: cover; border-radius: 1rem;}
 
 /* Brands Marquee Styles */
 @keyframes marquee {
