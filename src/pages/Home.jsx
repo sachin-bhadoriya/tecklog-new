@@ -81,17 +81,18 @@ const services = [
 ]
 
 const brands = [
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 1' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 2' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 3' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
-  { src: 'https://picsum.photos/200/300', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991583/html_jvhguv.png', alt: 'Brand 1' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991583/css_gc3yso.png', alt: 'Brand 2' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991582/bootstrap_klw3ub.png', alt: 'Brand 3' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991953/icons8-tailwind-css-48_zgt38i.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991583/js_ajz0pk.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991582/physics_e9weeq.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991582/wordpress-icon_ulyaen.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991582/shopify_auwztm.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991582/react_vjerwh.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991582/nodejs_mpp6cf.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991953/icons8-express-js-50_dilhyv.png', alt: 'Brand 4' },
+  { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991953/icons8-python-48_esdrye.png', alt: 'Brand 4' },
 ]
 
 const Home = () => {
@@ -104,12 +105,12 @@ const Home = () => {
   return (
     <section>
       <div className="common-padding-small">
-        <img src="https://picsum.photos/200/300" alt="Tecklog - Hero Section Image" className='hero-section-big-image' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785992492/Gemini_Generated_Image_b9hixab9hixab9hi_gedh2p.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image' />
 
         {/* Marquee Section */}
         <div className="relative overflow-hidden py-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <div className="flex w-max animate-marquee items-center gap-16">
-            {[...brands, ...brands].map((brand, i) => (
+            {[...brands, ...brands, ...brands].map((brand, i) => (
               <img
                 key={i}
                 src={brand.src}
@@ -159,10 +160,16 @@ const Home = () => {
 
       {/* Project Section */}
       <div className="common-padding-small">
-        <img src="https://picsum.photos/200/300" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://picsum.photos/200/300" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://picsum.photos/200/300" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        <img src="https://picsum.photos/200/300" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994446/Gemini_Generated_Image_b3o437b3o437b3o4_yncp4s.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994451/Gemini_Generated_Image_bdnvsubdnvsubdnv_cbth2m.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994452/Gemini_Generated_Image_i8ofnji8ofnji8of_maksug.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_3pddp33pddp33pdd_i9x4ci.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994461/Gemini_Generated_Image_oqlllnoqlllnoqll_2_l9aqag.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994471/Gemini_Generated_Image_ihewk5ihewk5ihew_isjxde.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994484/Gemini_Generated_Image_n29fp0n29fp0n29f_k5hisz.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994480/Gemini_Generated_Image_nay5d3nay5d3nay5_it5bzz.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
+        <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994479/Gemini_Generated_Image_oqlllnoqlllnoqll_kg9srl.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
       </div>
 
       {/* Service Section */}
