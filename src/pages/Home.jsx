@@ -202,13 +202,16 @@ const Home = () => {
           <div className='project-section-image mt-4 sticky top-4'>
             <img src={p.img} alt={p.title} loading='lazy' />
             <div className="project-section-content">
-              <p className='font13 fw300 leading-none mb-4'>Trusted Digital Partner for Modern Businesses</p>
-              <h1 className="font50 text-white fw700 leading-tight mb-4">
+              <p className='font13 fw300 leading-none mb-2'>Trusted Digital Partner for Modern Businesses</p>
+              <h1 className="font50 text-white fw700 leading-none mb-4">
                 We Design, Build & Scale Exceptional Digital Experiences.
               </h1>
               <p className='font14 fw300 '>
                 We transform ideas into powerful websites, apps, and AI solutions that drive business growth.
               </p>
+              <div className="mt-3">
+                    <Link to="/contact"><div className="rounded-full text-nowrap bg-slate-800 px-5 py-2.5 text-sm cursor-pointer font-semibold text-white transition-all hover:shadow-lg hover:bg-white hover:text-slate-800 hover:font-bold w-fit">Want to Create ?</div></Link>
+              </div>
             </div>
           </div>
         ))}

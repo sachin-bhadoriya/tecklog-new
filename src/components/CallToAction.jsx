@@ -10,7 +10,8 @@ const CallToAction = () => {
                     <p className="font30 fw500 leading-tight text-center text-white py-2">
                         Empowering businesses with modern software, AI solutions, and exceptional digital experiences.
                     </p>
-                    <div className="nav-cta-btn rounded-full text-nowrap bg-slate-950 px-5 py-2.5 text-sm cursor-pointer font-semibold text-white transition-all hover:shadow-lg"><Link to="/contact">Get In Touch</Link></div>
+
+                    <Link to="/contact"><div className="nav-cta-btn rounded-full text-nowrap bg-slate-950 px-5 py-2.5 text-sm cursor-pointer font-semibold text-white transition-all hover:shadow-lg">Get In Touch</div></Link>
                 </div>
             </div>
         </section>

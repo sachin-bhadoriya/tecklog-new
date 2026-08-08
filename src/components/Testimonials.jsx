@@ -13,11 +13,36 @@ const Testimonials = () => {
             <div className="bgprimary text-white py-25 px-15 round40">
                 <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12 md:col-span-3">
-                        <h2 className="text-7xl fw600 fontsecondary">100+</h2>
+                        <h2 className="text-7xl fw600 fontsecondary mb-3">100+</h2>
+                        <div className="flex flex-wrap items-center gap-1">
+                            {/* Profile Images */}
+                            <div className="flex -space-x-5">
+                                <img src="https://picsum.photos/200" alt="User" className="h-10 w-10 rounded-full border-1 border-white object-cover" />
+                                <img src="https://picsum.photos/200" alt="User" className="h-10 w-10 rounded-full border-1 border-white object-cover" />
+                                <img src="https://picsum.photos/200" alt="User" className="h-10 w-10 rounded-full border-1 border-white object-cover" />
+                                <img src="https://picsum.photos/200" alt="User" className="h-10 w-10 rounded-full border-1 border-white object-cover" />
+                                <img src="https://picsum.photos/200" alt="User" className="h-10 w-10 rounded-full border-1 border-white object-cover" />
+                            </div>
+
+                            {/* Rating */}
+                            <div>
+                                <div className="flex items-center gap-2">
+                                    <span className="font20 fw600 text-white"> 5.0 </span>
+                                    <div className="flex gap-1 text-lime-400">
+                                        <span className="text-xl">★</span>
+                                        <span className="text-xl">★</span>
+                                        <span className="text-xl">★</span>
+                                        <span className="text-xl">★</span>
+                                        <span className="text-xl">★</span>
+                                    </div>
+                                </div>
+                                <p className="font15 fw600 text-white leading-none"> Based on 100+ reviews </p>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-span-12 md:col-span-9">
-                        <h2 className="font18 fw500 mb-2">Testimonials</h2>
-                        <p className="font50 fw700 leading-tight">
+                        <h2 className="font18 fw500 mb-4 leading-none">Testimonials</h2>
+                        <p className="font50 fw700 leading-none">
                             Driven by Innovation. <span className='fontsecondary font52 fw500'><i>Trusted</i></span> by Clients.
                         </p>
                     </div>
@@ -44,7 +69,7 @@ const Testimonials = () => {
                         swiper.navigation.init();
                         swiper.navigation.update();
                     }}
-                    // autoplay={{ delay: 5000, disableOnInteraction: false }}
+                // autoplay={{ delay: 5000, disableOnInteraction: false }}
                 >
                     <SwiperSlide className='h-full'> <TestimonialCard /> </SwiperSlide>
                     <SwiperSlide className='h-full'> <TestimonialCard /> </SwiperSlide>
