@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <Link className="whatsapp-fixed-btn fixed bottom-10 right-10 bg-green-400 rounded-full shadow-lg z-50 w-14 h-14 iconAnimate flex items-center justify-center"><i class="fa-brands fa-whatsapp font30 text-green-800"></i></Link>
+      <Link className="whatsapp-fixed-btn fixed bottom-10 right-10 bg-green-400 rounded-full shadow-lg z-50 w-14 h-14 iconAnimate flex items-center justify-center"><i className="fa-brands fa-whatsapp font30 text-green-800"></i></Link>
       <Link className='fixed bottom-50 -right-13 fixed-cta-btn px-4 pt-3 pb-6 text-white z-50'>Call To Action</Link>
       <Routes>
         <Route path="/" element={<Home />} />

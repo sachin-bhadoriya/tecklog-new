@@ -95,6 +95,21 @@ const brands = [
   { src: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785991953/icons8-python-48_esdrye.png', alt: 'Brand 4' },
 ]
 
+
+const projects = [
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994446/Gemini_Generated_Image_b3o437b3o437b3o4_yncp4s.png', title: 'Project 1' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994451/Gemini_Generated_Image_bdnvsubdnvsubdnv_cbth2m.png', title: 'Project 2' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994452/Gemini_Generated_Image_i8ofnji8ofnji8of_maksug.png', title: 'Project 3' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png', title: 'Project 4' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png', title: 'Project 5' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_3pddp33pddp33pdd_i9x4ci.png', title: 'Project 6' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994461/Gemini_Generated_Image_oqlllnoqlllnoqll_2_l9aqag.png', title: 'Project 7' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994471/Gemini_Generated_Image_ihewk5ihewk5ihew_isjxde.png', title: 'Project 8' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994484/Gemini_Generated_Image_n29fp0n29fp0n29f_k5hisz.png', title: 'Project 9' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994480/Gemini_Generated_Image_nay5d3nay5d3nay5_it5bzz.png', title: 'Project 10' },
+  { img: 'https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994479/Gemini_Generated_Image_oqlllnoqlllnoqll_kg9srl.png', title: 'Project 11' },
+]
+
 const Home = () => {
   const [openIndex, setOpenIndex] = useState(null)
 
@@ -108,11 +123,12 @@ const Home = () => {
         <div className='hero-section-big-image'>
           <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785992492/Gemini_Generated_Image_b9hixab9hixab9hi_gedh2p.png" alt="Tecklog - Hero Section Image" />
           <div className="hero-section-content">
-            <h1 className="font50 text-white fw700">
-              and future-ready digital solutions.
+            <p className='font13 fw300 leading-none mb-4'>Trusted Digital Partner for Modern Businesses</p>
+            <h1 className="font50 text-white fw700 leading-tight mb-4">
+              We Design, Build & Scale Exceptional Digital Experiences.
             </h1>
             <p className='font14 fw300 '>
-              At Techlog, we build more than software—we create digital experiences that solve real business challenges. Our team combines strategy, design, engineering, and AI to develop scalable products that help businesses grow faster, operate smarter, and stay ahead of the competition.
+              We transform ideas into powerful websites, apps, and AI solutions that drive business growth.
             </p>
           </div>
         </div>
@@ -143,22 +159,34 @@ const Home = () => {
               </div>
               <div className="col-span-12 md:col-span-6">
                 <p className="font30 fw500 leading-tight">
-                  <span className="text-gray-700">Helping startups, SMEs, and enterprises build reliable, scalable, </span>and future-ready digital solutions.
+                  <span className="text-gray-700">Techlog is a modern software development company focused on building reliable, scalable, and beautifully designed digital products. </span> We combine strategy, creativity, and engineering to help businesses innovate faster and stay ahead in a competitive market.
                 </p>
                 <p className='font17 fw500 text-gray-600 mt-5 md:mt-10'>
-                  At Techlog, we build more than software—we create digital experiences that solve real business challenges. Our team combines strategy, design, engineering, and AI to develop scalable products that help businesses grow faster, operate smarter, and stay ahead of the competition.
+                  Our mission is simple—deliver technology that creates measurable value while maintaining exceptional user experiences.
                 </p>
-                <div className="grid grid-cols-12 gap-4 mt-5 md:mt-10">
-                  <div className="col-span-6 flex flex-col justify-between bg-white px-8 py-6 round20 boxshadow">
-                    <h3 className="font13 fw400 text-gray-400 mb-12">/ Products Deliver</h3>
-                    <p className='font32 fw700 colorprimary'>
-                      500+
+                <div className="grid grid-cols-12 gap-2 mt-5 md:mt-10">
+                  <div className="col-span-6 flex flex-col justify-between bg-white px-5 py-5 round20 boxshadow">
+                    <h3 className="font13 fw400 text-gray-400 mb-2">/ Projects Delivered</h3>
+                    <p className='font32 fw700 colorprimary leading-none'>
+                      50+
                     </p>
                   </div>
-                  <div className="col-span-6 flex flex-col justify-between bg-white px-8 py-6 round20 boxshadow">
-                    <h3 className="font13 fw400 text-gray-400 mb-12">/ Client Satisfaction</h3>
-                    <p className='font32 fw700 colorprimary'>
-                      500+
+                  <div className="col-span-6 flex flex-col justify-between bg-white px-5 py-5 round20 boxshadow">
+                    <h3 className="font13 fw400 text-gray-400 mb-2">/ Client Satisfaction</h3>
+                    <p className='font32 fw700 colorprimary leading-none'>
+                      98%
+                    </p>
+                  </div>
+                  <div className="col-span-6 flex flex-col justify-between bg-white px-5 py-5 round20 boxshadow">
+                    <h3 className="font13 fw400 text-gray-400 mb-2">/ Industries Served</h3>
+                    <p className='font32 fw700 colorprimary leading-none'>
+                      5+
+                    </p>
+                  </div>
+                  <div className="col-span-6 flex flex-col justify-between bg-white px-5 py-5 round20 boxshadow">
+                    <h3 className="font13 fw400 text-gray-400 mb-2">/ Support</h3>
+                    <p className='font32 fw700 colorprimary leading-none'>
+                      24/7
                     </p>
                   </div>
                 </div>
@@ -170,40 +198,22 @@ const Home = () => {
 
       {/* Project Section */}
       <div className="common-padding-small">
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994446/Gemini_Generated_Image_b3o437b3o437b3o4_yncp4s.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994451/Gemini_Generated_Image_bdnvsubdnvsubdnv_cbth2m.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994452/Gemini_Generated_Image_i8ofnji8ofnji8of_maksug.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_b3o437b3o437b3o4_1_wonb2l.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994455/Gemini_Generated_Image_3pddp33pddp33pdd_i9x4ci.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994461/Gemini_Generated_Image_oqlllnoqlllnoqll_2_l9aqag.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994471/Gemini_Generated_Image_ihewk5ihewk5ihew_isjxde.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994484/Gemini_Generated_Image_n29fp0n29fp0n29f_k5hisz.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994480/Gemini_Generated_Image_nay5d3nay5d3nay5_it5bzz.png" alt="Tecklog - Hero Section Image" />
-        </div>
-        <div className='project-section-image mt-4 sticky top-4'>
-          <img src="https://res.cloudinary.com/dm0rfcoxl/image/upload/v1785994479/Gemini_Generated_Image_oqlllnoqlllnoqll_kg9srl.png" alt="Tecklog - Hero Section Image" className='hero-section-big-image mt-4 sticky top-4' />
-        </div>
+        {projects.map((p, i) => (
+          <div className='project-section-image mt-4 sticky top-4'>
+            <img src={p.img} alt={p.title} loading='lazy' />
+            <div className="project-section-content">
+              <p className='font13 fw300 leading-none mb-4'>Trusted Digital Partner for Modern Businesses</p>
+              <h1 className="font50 text-white fw700 leading-tight mb-4">
+                We Design, Build & Scale Exceptional Digital Experiences.
+              </h1>
+              <p className='font14 fw300 '>
+                We transform ideas into powerful websites, apps, and AI solutions that drive business growth.
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
+
       {/* Service Section */}
       <div className="home-about-section">
         <div className="container">
@@ -248,7 +258,7 @@ const Home = () => {
                           breakpoints={{
                             767: { slidesPerView: 3 }
                           }}
-                          autoplay={{ delay: 5000 }}
+                          // autoplay={{ delay: 5000 }}
                           pagination={{ clickable: true }}
                         >
                           {service.slides.map((slide, i) => (

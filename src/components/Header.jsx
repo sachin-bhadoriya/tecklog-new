@@ -27,7 +27,7 @@ const Header = () => {
         </nav>
         <div className="nav-cta-btn rounded-full bg-slate-950 px-5 py-2.5 text-sm cursor-pointer font-semibold text-white transition-all hover:shadow-lg"><Link to="/contact">Get In Touch</Link></div>
         <button className="mobile-menu-icon p-1 rounded-xl bg-slate-950 text-white cursor-pointer transition-all hover:shadow-lg w-10 h-10 flex items-center justify-center" onClick={toggleMenu}>
-          {!isMenuOpen ? <i className="fa-solid fa-bars-staggered"></i> : <i class="fa-solid fa-xmark"></i>}
+          {!isMenuOpen ? <i className="fa-solid fa-bars-staggered"></i> : <i className="fa-solid fa-xmark"></i>}
         </button>
        </div>
     </header>

@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom';
-import { Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Pagination, Scrollbar, A11y, Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import TestimonialCard from './TestimonialCard';
 
 const Testimonials = () => {
-    const swiperRef = useRef(null)
+    const prevRef = useRef(null)
+    const nextRef = useRef(null)
 
     return (
         <section className='testimonial-section common-padding-small'>
@@ -23,7 +24,7 @@ const Testimonials = () => {
                 </div>
                 <Swiper
                     className="TestimonialsAccordionSwiper"
-                    modules={[Pagination, Scrollbar, A11y, Autoplay]}
+                    modules={[Pagination, Scrollbar, A11y, Autoplay, Navigation]}
                     spaceBetween={10}
                     slidesPerView={1}
                     breakpoints={{
@@ -31,8 +32,19 @@ const Testimonials = () => {
                         1024: { slidesPerView: 3 },
                         1280: { slidesPerView: 4 }
                     }}
-                    autoplay={{ delay: 5000, disableOnInteraction: false }}
-                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    navigation={{
+                        prevEl: prevRef.current,
+                        nextEl: nextRef.current,
+                    }}
+                    onSwiper={(swiper) => {
+                        // manually attach + init navigation now that refs exist
+                        swiper.params.navigation.prevEl = prevRef.current;
+                        swiper.params.navigation.nextEl = nextRef.current;
+                        swiper.navigation.destroy();
+                        swiper.navigation.init();
+                        swiper.navigation.update();
+                    }}
+                    // autoplay={{ delay: 5000, disableOnInteraction: false }}
                 >
                     <SwiperSlide className='h-full'> <TestimonialCard /> </SwiperSlide>
                     <SwiperSlide className='h-full'> <TestimonialCard /> </SwiperSlide>
@@ -45,14 +57,14 @@ const Testimonials = () => {
                 <div className="testimonials-btn-container flex justify-end gap-2 mt-6">
                     <button
                         type="button"
-                        onClick={() => swiperRef.current.slidePrev()}
+                        ref={prevRef}
                         className='p-3 bgtertiary rounded-full w-10 h-10 flex justify-center items-center cursor-pointer'
                     >
                         <i className="fa-solid fa-angle-left"></i>
                     </button>
                     <button
                         type="button"
-                        onClick={() => swiperRef.current.slideNext()}
+                        ref={nextRef}
                         className='p-3 bgtertiary rounded-full w-10 h-10 flex justify-center items-center cursor-pointer'
                     >
                         <i className="fa-solid fa-angle-right"></i>
